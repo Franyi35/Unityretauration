@@ -1,0 +1,16 @@
+{
+  "name": "Unity Restoration Group",
+  "short_name": "Unity Restoration",
+  "description": "Restauración de daños por agua, incendio y moho en Florida.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0f1a26",
+  "theme_color": "#a01e2d",
+  "orientation": "portrait-primary",
+  "icons": [
+    { "src": "assets/icon-v1-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icon-v1-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icon-v1-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unity Restoration Group</title>
+<link rel="icon" type="image/png" href="assets/icon-v1-192.png">
+<link rel="apple-touch-icon" href="assets/icon-v1-192.png">
+<meta property="og:title" content="Unity Restoration Group">
+<meta property="og:description" content="Restauración y reparación de daños de agua, moho y techo en Tampa Bay.">
+<meta property="og:image" content="https://unityrestorationgroup.vercel.app/assets/unity-logo-share.png">
+<meta property="og:url" content="https://unityrestorationgroup.vercel.app/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://unityrestorationgroup.vercel.app/assets/unity-logo-share.png">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200" fill="#0d1a2b"/><circle cx="100" cy="90" r="46" fill="#a01e2d"/><text x="100" y="160" font-family="sans-serif" font-size="26" fill="#fff" text-anchor="middle" font-weight="700">Unity</text></svg></template>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #f4f5f6; color: #1b2430; font-family: "Public Sans", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  h1,h2,h3,h4 { font-family: "Poppins", sans-serif; margin: 0; }
+  p { margin: 0; }
+  a { color: #a01e2d; text-decoration: none; }
+  a:hover { color: #7c1622; }
+  ::selection { background: #a01e2d; color: #fff; }
+  input, textarea, select { font-family: "Public Sans", sans-serif; }
+  @keyframes urgFall { to { transform: translateY(940px) rotate(8deg); } }
+  @keyframes drift { to { transform: translateX(120px); } }
+  @keyframes marquee { to { transform: translateX(-50%); } }
+  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.35;transform:scale(.8)} }
+  @keyframes floaty { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
+  @keyframes sweep { 0%{transform:translateX(-120%)} 60%,100%{transform:translateX(240%)} }
+  @keyframes spinSun { to { transform: rotate(360deg); } }
+  /* intro one-shot timeline (7s) */
+  @keyframes iStorm { 0%{opacity:1} 55%{opacity:1} 72%{opacity:0} 100%{opacity:0} }
+  @keyframes iCalm  { 0%{opacity:0} 55%{opacity:0} 74%{opacity:1} 100%{opacity:1} }
+  @keyframes iRain  { 0%{opacity:1} 55%{opacity:1} 67%{opacity:0} 100%{opacity:0} }
+  @keyframes iBolt  { 0%,6%{opacity:0} 8%{opacity:.95} 11%{opacity:0} 20%{opacity:.7} 23%{opacity:0} 34%{opacity:.9} 37%{opacity:0} 47%{opacity:.6} 50%{opacity:0} 52%,100%{opacity:0} }
+  @keyframes iSun   { 0%{opacity:0;transform:translate(-50%,40px) scale(.75)} 56%{opacity:0;transform:translate(-50%,40px) scale(.75)} 78%{opacity:1;transform:translate(-50%,0) scale(1)} 100%{opacity:1;transform:translate(-50%,0) scale(1)} }
+  @keyframes iReveal{ 0%{opacity:0;transform:translateY(24px) scale(.92)} 60%{opacity:0;transform:translateY(24px) scale(.92)} 76%{opacity:1;transform:translateY(0) scale(1)} 100%{opacity:1;transform:translateY(0) scale(1)} }
+  @keyframes fadeUp { 0%,30%{opacity:0;transform:translateY(14px)} 100%{opacity:1;transform:translateY(0)} }
+
+  /* ===== MOBILE responsive ===== */
+  @media (max-width: 768px) {
+    [data-m="hdr"] { padding: 8px 14px !important; gap: 10px !important; }
+    [data-m="hdr-logo"] { height: 40px !important; }
+    [data-m="hdr-nav"] { display: none !important; }
+    [data-m="hdr-phone"] { display: none !important; }
+    [data-m="hdr-cta"] { padding: 10px 13px !important; font-size: 11px !important; }
+    #top { min-height: auto !important; cursor: auto !important; }
+    [data-m="cursor-fx"] { display: none !important; }
+    [data-m="hero-grid"] { grid-template-columns: 1fr !important; gap: 26px !important; padding: 34px 18px 44px !important; }
+    [data-m="hero-h1"] { font-size: 33px !important; }
+    [data-m="hero-sub"] { font-size: 15px !important; max-width: 100% !important; }
+    [data-m="h2big"] { font-size: 26px !important; }
+    [data-m="statnum"] { font-size: 30px !important; }
+    [data-m="grid4"] { grid-template-columns: repeat(2,1fr) !important; }
+    [data-m="cities"] { grid-template-columns: repeat(2,1fr) !important; }
+    [data-m="grid3"] { grid-template-columns: 1fr !important; }
+    [data-m="promo"] { grid-template-columns: 1fr !important; max-width: 420px; margin-left: auto !important; margin-right: auto !important; }
+    [data-m="why-grid"] { grid-template-columns: 1fr !important; gap: 30px !important; }
+    [data-m="testi-card"] { padding: 30px 20px !important; }
+    [data-m="testi-arrow"] { display: none !important; }
+    [data-m="cta-row"] { flex-direction: column !important; align-items: flex-start !important; }
+    [data-m="foot-grid"] { grid-template-columns: repeat(2,1fr) !important; gap: 26px !important; }
+    [data-m="foot-logos"] img { height: 46px !important; }
+    [data-m="foot-bot"] { flex-direction: column !important; align-items: flex-start !important; }
+    section { padding-left: 18px !important; padding-right: 18px !important; }
+    footer { padding-left: 18px !important; padding-right: 18px !important; }
+  }
+  @media (max-width: 430px) {
+    [data-m="hero-h1"] { font-size: 29px !important; }
+    [data-m="grid4"] { gap: 12px !important; }
+    [data-m="cities"] { grid-template-columns: 1fr !important; }
+    [data-m="foot-grid"] { grid-template-columns: 1fr !important; }
+  }
+  /* ===== MOBILE carousel variant ===== */
+  @media (max-width: 768px) {
+    .mL-carousel [data-m="cities"], .mL-carousel [data-m="grid3"], .mL-carousel [data-m="promo"] {
+      display: flex !important; grid-template-columns: none !important;
+      overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
+      gap: 14px !important; padding-bottom: 10px; scroll-padding-left: 18px; max-width: none !important;
+    }
+    .mL-carousel [data-m="cities"] > * { flex: 0 0 47% !important; scroll-snap-align: center; }
+    .mL-carousel [data-m="grid3"] > * { flex: 0 0 84% !important; scroll-snap-align: center; }
+    .mL-carousel [data-m="promo"] > * { flex: 0 0 66% !important; max-width: none !important; scroll-snap-align: center; }
+    .mL-carousel [data-m="cities"]::-webkit-scrollbar, .mL-carousel [data-m="grid3"]::-webkit-scrollbar, .mL-carousel [data-m="promo"]::-webkit-scrollbar { height: 0; }
+  }
+</style>
+</helmet>
+
+<div class="{{ mLClass }}" style="position:relative;max-width:100%;overflow-x:hidden;">
+
+<!-- ============ INTRO (separate cinematic) ============ -->
+<div style="position:fixed;inset:0;z-index:200;background:#06101c;overflow:hidden;transition:opacity .9s ease;opacity:{{ introOpacity }};visibility:{{ introVis }};pointer-events:{{ introPE }};">
+  <div style="position:absolute;inset:0;background:linear-gradient(160deg,#050d18,#0c1a2b 55%,#132537);animation:iStorm 5s ease-in-out forwards;"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg,#8ec4f0,#cfe9ff 55%,#fff4d6);animation:iCalm 5s ease-in-out forwards;"></div>
+  <div style="position:absolute;top:60px;left:50%;width:640px;height:640px;background:radial-gradient(circle,rgba(255,239,196,.95) 0%,rgba(255,214,140,.5) 26%,rgba(255,214,140,0) 62%);transform:translate(-50%,40px);animation:iSun 5s ease-in-out forwards;pointer-events:none;"></div>
+  <div style="position:absolute;inset:-60px 0 0 0;animation:iRain 5s ease-in-out forwards;pointer-events:none;">{{ introRain }}</div>
+  <div style="position:absolute;inset:0;background:radial-gradient(circle at 55% 22%,rgba(255,255,255,.9),rgba(200,220,255,.15) 42%,transparent 72%);mix-blend-mode:screen;animation:iBolt 5s linear forwards;pointer-events:none;"></div>
+  <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;">
+    <div style="animation:iReveal 5s ease-in-out forwards;">
+      <img src="assets/unity-logo.png" alt="Unity Restoration Group" style="height:190px;width:auto;filter:drop-shadow(0 16px 40px rgba(0,0,0,.4));" />
+      <div style="font-family:'Poppins';font-weight:700;font-size:34px;color:#0d1a2b;margin-top:18px;line-height:1.25;text-shadow:0 2px 20px rgba(255,255,255,.5);">{{ t.intro.taglineA }}<br><span style="color:#a01e2d;">{{ t.intro.taglineB }}</span></div>
+    </div>
+  </div>
+</div>
+
+<div style="opacity:{{ pageOpacity }};transition:opacity 1.3s ease;">
+<!-- ============ HEADER ============ -->
+<header style="position:sticky;top:0;z-index:60;background:rgba(255,255,255,.62);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);border-bottom:1px solid rgba(255,255,255,.7);box-shadow:0 6px 24px rgba(15,25,40,.06);">
+  <div data-m="hdr" style="max-width:1200px;margin:0 auto;padding:10px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px;">
+    <a href="#top" style="display:flex;align-items:center;gap:10px;flex-shrink:0;"><img data-m="hdr-logo" src="assets/unity-logo.png" alt="Unity Restoration Group" style="height:52px;width:auto;display:block;" /></a>
+    <nav data-m="hdr-nav" style="display:flex;align-items:center;gap:24px;font-size:13px;font-weight:600;letter-spacing:.02em;color:#2a3340;">
+      <a href="#top" style="color:#a01e2d;">{{ t.nav.home }}</a>
+      <a href="#services" style="color:#2a3340;">{{ t.nav.services }}</a>
+      <a href="#work" style="color:#2a3340;">{{ t.nav.work }}</a>
+      <a href="#why" style="color:#2a3340;">{{ t.nav.about }}</a>
+      <a href="#contact" style="color:#2a3340;">{{ t.nav.contact }}</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:14px;flex-shrink:0;">
+      <div style="display:flex;background:rgba(15,25,40,.06);border:1px solid rgba(15,25,40,.1);border-radius:10px;padding:2px;font-size:12px;font-weight:700;">
+        <button onClick="{{ setEn }}" style="border:none;cursor:pointer;padding:6px 11px;border-radius:8px;background:{{ enBg }};color:{{ enFg }};font-weight:700;">EN</button>
+        <button onClick="{{ setEs }}" style="border:none;cursor:pointer;padding:6px 11px;border-radius:8px;background:{{ esBg }};color:{{ esFg }};font-weight:700;">ES</button>
+      </div>
+      <a data-m="hdr-phone" href="https://wa.me/17542711851" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:6px;font-weight:700;font-size:14px;color:#a01e2d;">📞 (754) 271-1851</a>
+      <a data-m="hdr-cta" href="#estimate-form" style="background:linear-gradient(135deg,#a01e2d,#7c1622);color:#fff;font-weight:700;font-size:12px;letter-spacing:.03em;padding:11px 16px;border-radius:12px;box-shadow:0 8px 20px rgba(160,30,45,.32),inset 0 1px 0 rgba(255,255,255,.25);">{{ t.nav.cta }} →</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO (reflects live Tampa weather) ============ -->
+<section id="top" onMouseMove="{{ onHeroMove }}" onMouseLeave="{{ onHeroLeave }}" style="position:relative;min-height:760px;overflow:hidden;background:#08111d;cursor:none;">
+  <div data-m="cursor-fx" style="position:absolute;left:{{ cursorLeft }}px;top:{{ cursorTop }}px;width:{{ cursorSize }}px;height:{{ cursorSize }}px;transform:translate(-50%,-50%);border-radius:50%;background:{{ cursorGlowBg }};filter:blur(3px);opacity:{{ cursorGlowOpacity }};transition:opacity .3s ease;pointer-events:none;mix-blend-mode:screen;z-index:5;"></div>
+  <div data-m="cursor-fx" style="position:absolute;left:{{ cursorLeft }}px;top:{{ cursorTop }}px;width:14px;height:14px;transform:translate(-50%,-50%);border-radius:50%;background:{{ cursorDotBg }};box-shadow:0 0 14px {{ cursorDotBg }};opacity:{{ cursorGlowOpacity }};transition:opacity .3s ease;pointer-events:none;z-index:6;"></div>
+  <div style="position:absolute;inset:0;"><image-slot id="heroHouse" shape="rect" fit="cover" src="https://images.pexels.com/photos/4626268/pexels-photo-4626268.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600" placeholder="Foto de casa (hero)"></image-slot></div>
+  <!-- readability base -->
+  <div style="position:absolute;inset:0;background:linear-gradient(100deg,rgba(6,12,20,.85) 0%,rgba(6,12,20,.55) 42%,rgba(6,12,20,.15) 72%);pointer-events:none;"></div>
+  <!-- weather mode tints -->
+  <div style="position:absolute;inset:0;background:linear-gradient(160deg,rgba(6,14,26,.62),rgba(14,26,42,.5));transition:opacity 1.4s ease;opacity:{{ skyStorm }};pointer-events:none;"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(160deg,rgba(24,40,60,.42),rgba(40,58,80,.3));transition:opacity 1.4s ease;opacity:{{ skyRain }};pointer-events:none;"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(160deg,rgba(70,78,90,.4),rgba(90,98,110,.24));transition:opacity 1.4s ease;opacity:{{ skyCloud }};pointer-events:none;"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(120,180,235,.28),rgba(255,224,150,.14));transition:opacity 1.4s ease;opacity:{{ skySun }};pointer-events:none;"></div>
+  <!-- drifting cloud -->
+  <div style="position:absolute;top:44px;left:-160px;width:340px;height:96px;background:radial-gradient(closest-side,rgba(255,255,255,.5),rgba(255,255,255,0));filter:blur(8px);border-radius:60px;animation:drift 34s ease-in-out infinite alternate;opacity:{{ cloudVisible }};transition:opacity 1.4s ease;pointer-events:none;"></div>
+  <!-- sun glow -->
+  <div style="position:absolute;top:-40px;right:80px;width:360px;height:360px;background:radial-gradient(circle,rgba(255,239,196,.85) 0%,rgba(255,214,140,.4) 28%,rgba(255,214,140,0) 64%);transition:opacity 1.4s ease;opacity:{{ sunVisible }};pointer-events:none;"></div>
+  <!-- rain -->
+  <div style="position:absolute;inset:-60px 0 0 0;transition:opacity 1s ease;opacity:{{ rainVisible }};pointer-events:none;">{{ heroRain }}</div>
+  <!-- lightning -->
+  <div style="position:absolute;inset:0;background:radial-gradient(circle at 70% 18%,rgba(255,255,255,.7),transparent 60%);mix-blend-mode:screen;transition:opacity 1s ease;opacity:{{ lightningVisible }};pointer-events:none;"></div>
+
+  <div data-m="hero-grid" style="position:relative;z-index:5;max-width:1200px;margin:0 auto;padding:64px 28px 80px;display:grid;grid-template-columns:1.08fr .92fr;gap:44px;align-items:start;">
+    <div>
+      <!-- live weather chip -->
+      <div style="display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(14px);border-radius:999px;padding:8px 16px;color:#fff;font-size:13px;font-weight:600;margin-bottom:16px;">
+        <span style="width:8px;height:8px;border-radius:50%;background:#4ade80;box-shadow:0 0 8px #4ade80;animation:pulse 1.4s ease-in-out infinite;"></span>
+        {{ t.hero.wx }} · <span style="font-size:15px;">{{ tampaIcon }}</span> <b style="font-family:'Poppins';">{{ tampaTemp }}°</b> · {{ tampaCondLabel }} · 💨 {{ tampaWind }} mph
+      </div>
+      <div style="font-weight:700;font-size:12px;letter-spacing:.18em;color:#ff8a97;margin-bottom:14px;">{{ t.hero.kicker }}</div>
+      <h1 data-m="hero-h1" style="font-size:58px;line-height:1.02;font-weight:800;color:#fff;text-shadow:0 6px 30px rgba(0,0,0,.4);letter-spacing:-.01em;">{{ t.hero.t1 }}<br>{{ t.hero.t2 }}<span style="color:#ff5d6c;">{{ t.hero.t2b }}</span></h1>
+      <p data-m="hero-sub" style="margin-top:20px;font-size:18px;line-height:1.55;color:rgba(255,255,255,.9);max-width:460px;text-shadow:0 2px 12px rgba(0,0,0,.4);">{{ t.hero.sub }}</p>
+      <div style="display:flex;gap:24px;flex-wrap:wrap;margin-top:26px;">
+        <div style="display:flex;align-items:center;gap:11px;color:#fff;"><span style="width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);backdrop-filter:blur(10px);font-size:19px;">⏱️</span><span style="font-size:13px;font-weight:600;line-height:1.2;max-width:110px;">{{ t.hero.b1 }}</span></div>
+        <div style="display:flex;align-items:center;gap:11px;color:#fff;"><span style="width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);backdrop-filter:blur(10px);font-size:19px;">🛡️</span><span style="font-size:13px;font-weight:600;line-height:1.2;max-width:110px;">{{ t.hero.b2 }}</span></div>
+        <div style="display:flex;align-items:center;gap:11px;color:#fff;"><span style="width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);backdrop-filter:blur(10px);font-size:19px;">👥</span><span style="font-size:13px;font-weight:600;line-height:1.2;max-width:120px;">{{ t.hero.b3 }}</span></div>
+      </div>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:28px;">
+        <a href="#estimate-form" style="background:linear-gradient(135deg,#a01e2d,#7c1622);color:#fff;font-weight:700;font-size:14px;padding:16px 26px;border-radius:14px;box-shadow:0 14px 30px rgba(160,30,45,.4),inset 0 1px 0 rgba(255,255,255,.25);">{{ t.hero.cta }} →</a>
+        <a href="https://wa.me/17542711851" target="_blank" rel="noopener" style="background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.4);backdrop-filter:blur(14px);color:#fff;font-weight:700;font-size:14px;padding:16px 26px;border-radius:14px;">📞 {{ t.hero.call }}</a>
+      </div>
+    </div>
+
+    <div id="estimate-form" style="position:relative;background:rgba(255,255,255,.72);backdrop-filter:blur(26px) saturate(180%);-webkit-backdrop-filter:blur(26px) saturate(180%);border:1px solid rgba(255,255,255,.85);border-radius:22px;padding:28px;box-shadow:0 30px 70px rgba(8,17,29,.4),inset 0 1px 0 rgba(255,255,255,.9);overflow:hidden;scroll-margin-top:100px;">
+      <div style="position:absolute;top:0;left:0;width:60px;height:100%;background:linear-gradient(90deg,rgba(255,255,255,.6),transparent);animation:sweep 7s ease-in-out infinite;pointer-events:none;"></div>
+      <h3 style="font-size:26px;font-weight:700;color:#1b2430;">{{ t.form.title1 }}<span style="color:#a01e2d;">{{ t.form.titleFree }}</span>{{ t.form.title2 }}</h3>
+      <p style="font-size:14px;color:#5a6472;margin-top:4px;">{{ t.form.fast }}</p>
+      <div style="display:flex;flex-direction:column;gap:12px;margin-top:18px;">
+        <input ref="{{ nameRef }}" placeholder="{{ t.form.fName }}" style="width:100%;padding:13px 15px;border:1px solid rgba(27,36,48,.15);background:rgba(255,255,255,.7);border-radius:11px;font-size:14px;outline:none;" />
+        <input ref="{{ phoneRef }}" placeholder="{{ t.form.fPhone }}" style="width:100%;padding:13px 15px;border:1px solid rgba(27,36,48,.15);background:rgba(255,255,255,.7);border-radius:11px;font-size:14px;outline:none;" />
+        <input ref="{{ emailRef }}" placeholder="{{ t.form.fEmail }}" style="width:100%;padding:13px 15px;border:1px solid rgba(27,36,48,.15);background:rgba(255,255,255,.7);border-radius:11px;font-size:14px;outline:none;" />
+        <select ref="{{ serviceRef }}" style="width:100%;padding:13px 15px;border:1px solid rgba(27,36,48,.15);background:rgba(255,255,255,.7);border-radius:11px;font-size:14px;color:#5a6472;outline:none;"><option>{{ t.form.fService }}</option><option>{{ t.services.s1 }}</option><option>{{ t.services.s2 }}</option><option>{{ t.services.s3 }}</option></select>
+        <textarea ref="{{ msgRef }}" placeholder="{{ t.form.fMsg }}" rows="3" style="width:100%;padding:13px 15px;border:1px solid rgba(27,36,48,.15);background:rgba(255,255,255,.7);border-radius:11px;font-size:14px;outline:none;resize:none;"></textarea>
+        <button onClick="{{ sendMail }}" style="width:100%;padding:15px;background:linear-gradient(135deg,#a01e2d,#7c1622);color:#fff;font-weight:700;font-size:14px;letter-spacing:.04em;border:none;border-radius:12px;cursor:pointer;box-shadow:0 12px 26px rgba(160,30,45,.38),inset 0 1px 0 rgba(255,255,255,.25);">{{ t.form.send }}</button>
+        <p style="text-align:center;font-size:12px;color:#7a8493;">🔒 {{ t.form.secure }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LIVE STORM TRACKER ============ -->
+<section style="position:relative;background:linear-gradient(180deg,#0a1420,#0d1a2b 60%,#0a1626);color:#fff;padding:64px 28px 72px;overflow:hidden;">
+  <div style="position:absolute;inset:0;background:radial-gradient(circle at 20% 10%,rgba(160,30,45,.22),transparent 45%),radial-gradient(circle at 85% 90%,rgba(58,110,165,.22),transparent 45%);pointer-events:none;"></div>
+  <div style="position:relative;max-width:1200px;margin:0 auto;">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+      <div>
+        <div style="display:flex;align-items:center;gap:9px;font-weight:700;font-size:12px;letter-spacing:.18em;color:#ff8a97;"><span style="width:9px;height:9px;border-radius:50%;background:#ff3b4e;box-shadow:0 0 12px #ff3b4e;animation:pulse 1.3s ease-in-out infinite;"></span>{{ t.tracker.badge }}</div>
+        <h2 data-m="h2big" style="font-size:38px;font-weight:800;margin-top:8px;letter-spacing:-.01em;">{{ t.tracker.title }}</h2>
+        <p style="color:rgba(255,255,255,.6);margin-top:6px;font-size:15px;max-width:640px;">{{ t.tracker.sub }}</p>
+      </div>
+      <div style="text-align:right;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(14px);border-radius:14px;padding:12px 18px;">
+        <div style="font-size:11px;letter-spacing:.12em;color:rgba(255,255,255,.55);">{{ t.tracker.updated }}</div>
+        <div style="font-family:'Poppins';font-weight:700;font-size:22px;color:#7fd0ff;font-variant-numeric:tabular-nums;">{{ now }}</div>
+      </div>
+    </div>
+
+    <div data-m="grid4" style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:26px;">
+      <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(16px);border-radius:18px;padding:20px 22px;box-shadow:inset 0 1px 0 rgba(255,255,255,.15);">
+        <div style="font-size:12px;letter-spacing:.08em;color:rgba(255,255,255,.55);">{{ t.tracker.stat1 }}</div>
+        <div data-m="statnum" style="font-family:'Poppins';font-weight:800;font-size:44px;color:#ff5d6c;line-height:1;margin-top:8px;font-variant-numeric:tabular-nums;">{{ alerts }}</div>
+        <div style="font-size:12px;color:rgba(255,255,255,.5);margin-top:6px;">{{ t.tracker.stat1s }}</div>
+      </div>
+      <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(16px);border-radius:18px;padding:20px 22px;box-shadow:inset 0 1px 0 rgba(255,255,255,.15);">
+        <div style="font-size:12px;letter-spacing:.08em;color:rgba(255,255,255,.55);">{{ t.tracker.stat2 }}</div>
+        <div data-m="statnum" style="font-family:'Poppins';font-weight:800;font-size:44px;color:#ffc861;line-height:1;margin-top:8px;font-variant-numeric:tabular-nums;">{{ maxWind }}<span style="font-size:18px;color:rgba(255,255,255,.6);"> mph</span></div>
+        <div style="font-size:12px;color:rgba(255,255,255,.5);margin-top:6px;">{{ t.tracker.stat2s }}</div>
+      </div>
+      <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(16px);border-radius:18px;padding:20px 22px;box-shadow:inset 0 1px 0 rgba(255,255,255,.15);">
+        <div style="font-size:12px;letter-spacing:.08em;color:rgba(255,255,255,.55);">{{ t.tracker.stat3 }}</div>
+        <div data-m="statnum" style="font-family:'Poppins';font-weight:800;font-size:44px;color:#7fd0ff;line-height:1;margin-top:8px;font-variant-numeric:tabular-nums;">{{ avgRain }}<span style="font-size:18px;color:rgba(255,255,255,.6);">%</span></div>
+        <div style="font-size:12px;color:rgba(255,255,255,.5);margin-top:6px;">{{ t.tracker.stat3s }}</div>
+      </div>
+      <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(16px);border-radius:18px;padding:20px 22px;box-shadow:inset 0 1px 0 rgba(255,255,255,.15);">
+        <div style="font-size:12px;letter-spacing:.08em;color:rgba(255,255,255,.55);">{{ t.tracker.stat4 }}</div>
+        <div data-m="statnum" style="font-family:'Poppins';font-weight:800;font-size:44px;color:#7Cf0b8;line-height:1;margin-top:8px;font-variant-numeric:tabular-nums;">12</div>
+        <div style="font-size:12px;color:rgba(255,255,255,.5);margin-top:6px;">{{ t.tracker.stat4s }}</div>
+      </div>
+    </div>
+
+    <div style="margin-top:18px;background:rgba(160,30,45,.18);border:1px solid rgba(255,138,151,.3);border-radius:12px;overflow:hidden;padding:11px 0;">
+      <div style="display:flex;gap:40px;white-space:nowrap;animation:marquee 34s linear infinite;width:max-content;font-size:13px;font-weight:600;color:#ffd0d5;">
+        <sc-for list="{{ cities }}" as="a" hint-placeholder-count="10"><span>⚠ {{ a.city }} — {{ a.alert }} · {{ a.wind }} mph · {{ a.rain }}%</span></sc-for>
+        <sc-for list="{{ cities }}" as="a" hint-placeholder-count="10"><span>⚠ {{ a.city }} — {{ a.alert }} · {{ a.wind }} mph · {{ a.rain }}%</span></sc-for>
+      </div>
+    </div>
+
+    <div data-m="cities" style="display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:18px;">
+      <sc-for list="{{ cities }}" as="c" hint-placeholder-count="10">
+        <div style="position:relative;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);backdrop-filter:blur(16px);border-radius:16px;padding:16px;box-shadow:inset 0 1px 0 rgba(255,255,255,.12);overflow:hidden;">
+          <div style="position:absolute;top:-16px;right:-6px;font-size:52px;opacity:.16;">{{ c.ic }}</div>
+          <div style="display:flex;align-items:center;gap:8px;">
+            <span style="width:9px;height:9px;border-radius:50%;background:{{ c.dot }};box-shadow:0 0 8px {{ c.dot }};"></span>
+            <span style="font-weight:700;font-size:14px;font-family:'Poppins';">{{ c.city }}</span>
+          </div>
+          <div style="display:flex;align-items:baseline;gap:4px;margin-top:10px;">
+            <span style="font-family:'Poppins';font-weight:800;font-size:30px;font-variant-numeric:tabular-nums;">{{ c.temp }}°</span>
+            <span style="font-size:18px;margin-left:auto;">{{ c.ic }}</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:12px;color:rgba(255,255,255,.66);margin-top:12px;">
+            <span>💨 <b style="color:#fff;font-variant-numeric:tabular-nums;">{{ c.wind }}</b> mph</span>
+            <span>🌧️ <b style="color:#fff;font-variant-numeric:tabular-nums;">{{ c.rain }}</b>%</span>
+          </div>
+          <div style="margin-top:12px;font-size:11px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;color:{{ c.dot }};border-top:1px solid rgba(255,255,255,.1);padding-top:9px;">{{ c.alert }}</div>
+        </div>
+      </sc-for>
+    </div>
+    <p style="font-size:12px;color:rgba(255,255,255,.4);margin-top:16px;text-align:center;">{{ t.tracker.disclaimer }}</p>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services" style="background:#f4f5f6;padding:78px 28px;">
+  <div style="max-width:1200px;margin:0 auto;text-align:center;">
+    <div style="font-weight:700;font-size:13px;letter-spacing:.16em;color:#a01e2d;">{{ t.services.kicker }}</div>
+    <h2 data-m="h2big" style="font-size:38px;font-weight:800;margin-top:10px;color:#1b2430;">{{ t.services.title }}</h2>
+    <div style="width:64px;height:4px;background:#a01e2d;border-radius:4px;margin:16px auto 18px;"></div>
+    <p style="color:#5a6472;font-size:16px;max-width:580px;margin:0 auto;">{{ t.services.sub }}</p>
+    <div data-m="grid3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:44px;text-align:center;">
+      <div style="background:rgba(255,255,255,.75);backdrop-filter:blur(18px) saturate(160%);border:1px solid rgba(255,255,255,.9);border-radius:22px;padding:40px 28px;box-shadow:0 20px 45px rgba(15,25,40,.08),inset 0 1px 0 rgba(255,255,255,.9);">
+        <div style="width:74px;height:74px;border-radius:50%;margin:0 auto;display:grid;place-items:center;font-size:30px;background:linear-gradient(135deg,#a01e2d,#7c1622);box-shadow:0 12px 26px rgba(160,30,45,.32),inset 0 1px 0 rgba(255,255,255,.3);">💧</div>
+        <h3 style="font-size:22px;font-weight:700;margin-top:20px;color:#1b2430;">{{ t.services.s1 }}</h3>
+        <p style="color:#5a6472;font-size:15px;margin-top:12px;line-height:1.55;">{{ t.services.s1d }}</p>
+        <a href="#contact" style="display:inline-block;margin-top:18px;font-weight:700;font-size:13px;letter-spacing:.04em;">{{ t.services.learn }} →</a>
+      </div>
+      <div style="background:rgba(255,255,255,.75);backdrop-filter:blur(18px) saturate(160%);border:1px solid rgba(255,255,255,.9);border-radius:22px;padding:40px 28px;box-shadow:0 20px 45px rgba(15,25,40,.08),inset 0 1px 0 rgba(255,255,255,.9);">
+        <div style="width:74px;height:74px;border-radius:50%;margin:0 auto;display:grid;place-items:center;font-size:30px;background:linear-gradient(135deg,#a01e2d,#7c1622);box-shadow:0 12px 26px rgba(160,30,45,.32),inset 0 1px 0 rgba(255,255,255,.3);">🔥</div>
+        <h3 style="font-size:22px;font-weight:700;margin-top:20px;color:#1b2430;">{{ t.services.s2 }}</h3>
+        <p style="color:#5a6472;font-size:15px;margin-top:12px;line-height:1.55;">{{ t.services.s2d }}</p>
+        <a href="#contact" style="display:inline-block;margin-top:18px;font-weight:700;font-size:13px;letter-spacing:.04em;">{{ t.services.learn }} →</a>
+      </div>
+      <div style="background:rgba(255,255,255,.75);backdrop-filter:blur(18px) saturate(160%);border:1px solid rgba(255,255,255,.9);border-radius:22px;padding:40px 28px;box-shadow:0 20px 45px rgba(15,25,40,.08),inset 0 1px 0 rgba(255,255,255,.9);">
+        <div style="width:74px;height:74px;border-radius:50%;margin:0 auto;display:grid;place-items:center;font-size:30px;background:linear-gradient(135deg,#a01e2d,#7c1622);box-shadow:0 12px 26px rgba(160,30,45,.32),inset 0 1px 0 rgba(255,255,255,.3);">🦠</div>
+        <h3 style="font-size:22px;font-weight:700;margin-top:20px;color:#1b2430;">{{ t.services.s3 }}</h3>
+        <p style="color:#5a6472;font-size:15px;margin-top:12px;line-height:1.55;">{{ t.services.s3d }}</p>
+        <a href="#contact" style="display:inline-block;margin-top:18px;font-weight:700;font-size:13px;letter-spacing:.04em;">{{ t.services.learn }} →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY UNITY ============ -->
+<section id="why" style="position:relative;background:linear-gradient(160deg,#0d1a2b,#0a1420);color:#fff;padding:72px 28px;overflow:hidden;">
+  <div style="position:absolute;inset:0;background:radial-gradient(circle at 12% 20%,rgba(160,30,45,.18),transparent 40%);pointer-events:none;"></div>
+  <div data-m="why-grid" style="position:relative;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:center;">
+    <div>
+      <div style="font-weight:700;font-size:13px;letter-spacing:.16em;color:#ff8a97;">{{ t.why.kicker }}</div>
+      <h2 data-m="h2big" style="font-size:36px;font-weight:800;margin-top:12px;line-height:1.1;">{{ t.why.t1 }}<br>{{ t.why.t2 }}<span style="color:#ff5d6c;">{{ t.why.t2b }}</span></h2>
+      <p style="color:rgba(255,255,255,.68);margin-top:16px;font-size:15px;line-height:1.6;max-width:390px;">{{ t.why.sub }}</p>
+      <a href="#contact" style="display:inline-block;margin-top:24px;background:linear-gradient(135deg,#a01e2d,#7c1622);color:#fff;font-weight:700;font-size:13px;letter-spacing:.04em;padding:14px 22px;border-radius:12px;box-shadow:0 12px 26px rgba(160,30,45,.38),inset 0 1px 0 rgba(255,255,255,.25);">{{ t.why.learn }} →</a>
+    </div>
+    <div data-m="grid4" style="display:grid;grid-template-columns:repeat(4,1fr);gap:18px;">
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);backdrop-filter:blur(16px);border-radius:16px;padding:22px 16px;text-align:center;box-shadow:inset 0 1px 0 rgba(255,255,255,.12);">
+        <div style="font-size:30px;">⏱️</div><h4 style="font-size:16px;font-weight:700;margin-top:12px;">{{ t.why.f1 }}</h4><p style="font-size:13px;color:rgba(255,255,255,.62);margin-top:8px;line-height:1.5;">{{ t.why.f1d }}</p>
+      </div>
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);backdrop-filter:blur(16px);border-radius:16px;padding:22px 16px;text-align:center;box-shadow:inset 0 1px 0 rgba(255,255,255,.12);">
+        <div style="font-size:30px;">🛡️</div><h4 style="font-size:16px;font-weight:700;margin-top:12px;">{{ t.why.f2 }}</h4><p style="font-size:13px;color:rgba(255,255,255,.62);margin-top:8px;line-height:1.5;">{{ t.why.f2d }}</p>
+      </div>
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);backdrop-filter:blur(16px);border-radius:16px;padding:22px 16px;text-align:center;box-shadow:inset 0 1px 0 rgba(255,255,255,.12);">
+        <div style="font-size:30px;">📋</div><h4 style="font-size:16px;font-weight:700;margin-top:12px;">{{ t.why.f3 }}</h4><p style="font-size:13px;color:rgba(255,255,255,.62);margin-top:8px;line-height:1.5;">{{ t.why.f3d }}</p>
+      </div>
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);backdrop-filter:blur(16px);border-radius:16px;padding:22px 16px;text-align:center;box-shadow:inset 0 1px 0 rgba(255,255,255,.12);">
+        <div style="font-size:30px;">❤️</div><h4 style="font-size:16px;font-weight:700;margin-top:12px;">{{ t.why.f4 }}</h4><p style="font-size:13px;color:rgba(255,255,255,.62);margin-top:8px;line-height:1.5;">{{ t.why.f4d }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section style="position:relative;background:#fff;padding:78px 28px;overflow:hidden;">
+  <div style="position:absolute;inset:0;background-image:url('assets/unity-logo.png');background-repeat:repeat;background-size:160px auto;opacity:.06;pointer-events:none;z-index:0;"></div>
+  <div style="position:relative;max-width:1100px;margin:0 auto;text-align:center;">
+    <div style="font-weight:700;font-size:13px;letter-spacing:.16em;color:#a01e2d;">{{ t.process.kicker }}</div>
+    <h2 data-m="h2big" style="font-size:38px;font-weight:800;margin-top:10px;color:#1b2430;">{{ t.process.title }}</h2>
+    <div style="width:64px;height:4px;background:#a01e2d;border-radius:4px;margin:16px auto 40px;"></div>
+    <div data-m="grid4" style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;">
+      <div><div style="width:74px;height:74px;border-radius:50%;margin:0 auto;display:grid;place-items:center;font-size:28px;color:#fff;background:linear-gradient(135deg,#a01e2d,#7c1622);box-shadow:0 12px 26px rgba(160,30,45,.3),inset 0 1px 0 rgba(255,255,255,.3);">📞</div><h4 style="margin-top:16px;font-size:17px;font-weight:700;color:#1b2430;">1 · {{ t.process.p1 }}</h4><p style="font-size:13px;color:#5a6472;margin-top:8px;line-height:1.5;">{{ t.process.p1d }}</p></div>
+      <div><div style="width:74px;height:74px;border-radius:50%;margin:0 auto;display:grid;place-items:center;font-size:28px;color:#fff;background:linear-gradient(135deg,#a01e2d,#7c1622);box-shadow:0 12px 26px rgba(160,30,45,.3),inset 0 1px 0 rgba(255,255,255,.3);">📋</div><h4 style="margin-top:16px;font-size:17px;font-weight:700;color:#1b2430;">2 · {{ t.process.p2 }}</h4><p style="font-size:13px;color:#5a6472;margin-top:8px;line-height:1.5;">{{ t.process.p2d }}</p></div>
+      <div><div style="width:74px;height:74px;border-radius:50%;margin:0 auto;display:grid;place-items:center;font-size:28px;color:#fff;background:linear-gradient(135deg,#a01e2d,#7c1622);box-shadow:0 12px 26px rgba(160,30,45,.3),inset 0 1px 0 rgba(255,255,255,.3);">🔧</div><h4 style="margin-top:16px;font-size:17px;font-weight:700;color:#1b2430;">3 · {{ t.process.p3 }}</h4><p style="font-size:13px;color:#5a6472;margin-top:8px;line-height:1.5;">{{ t.process.p3d }}</p></div>
+      <div><div style="width:74px;height:74px;border-radius:50%;margin:0 auto;display:grid;place-items:center;font-size:28px;color:#fff;background:linear-gradient(135deg,#a01e2d,#7c1622);box-shadow:0 12px 26px rgba(160,30,45,.3),inset 0 1px 0 rgba(255,255,255,.3);">🏠</div><h4 style="margin-top:16px;font-size:17px;font-weight:700;color:#1b2430;">4 · {{ t.process.p4 }}</h4><p style="font-size:13px;color:#5a6472;margin-top:8px;line-height:1.5;">{{ t.process.p4d }}</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OUR WORK ============ -->
+<section id="work" style="background:#f4f5f6;padding:72px 28px;">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+      <div>
+        <div style="font-weight:700;font-size:13px;letter-spacing:.16em;color:#a01e2d;">{{ t.work.kicker }}</div>
+        <h2 data-m="h2big" style="font-size:34px;font-weight:800;margin-top:10px;color:#1b2430;">{{ t.work.title }}</h2>
+      </div>
+      <a href="#work" style="background:rgba(255,255,255,.75);backdrop-filter:blur(14px);border:1px solid rgba(160,30,45,.35);color:#a01e2d;font-weight:700;font-size:13px;letter-spacing:.03em;padding:12px 20px;border-radius:12px;">{{ t.work.viewAll }} →</a>
+    </div>
+    <div data-m="grid3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:32px;">
+      <div style="border-radius:18px;overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);box-shadow:0 18px 40px rgba(15,25,40,.1);">
+        <div style="position:relative;width:100%;height:200px;overflow:hidden;"><image-slot id="w1b" shape="rect" src="https://images.pexels.com/photos/1853951/pexels-photo-1853951.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" placeholder="Antes"></image-slot><span style="position:absolute;bottom:10px;left:10px;background:rgba(10,20,32,.82);color:#fff;font-size:11px;font-weight:700;letter-spacing:.06em;padding:5px 10px;border-radius:6px;">{{ t.work.before }}</span></div>
+        <div style="position:relative;width:100%;height:200px;overflow:hidden;"><image-slot id="w1a" shape="rect" src="https://images.pexels.com/photos/8288962/pexels-photo-8288962.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" placeholder="Después"></image-slot><span style="position:absolute;bottom:10px;left:10px;background:#a01e2d;color:#fff;font-size:11px;font-weight:700;letter-spacing:.06em;padding:5px 10px;border-radius:6px;">{{ t.work.after }}</span></div>
+      </div>
+      <div style="border-radius:18px;overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);box-shadow:0 18px 40px rgba(15,25,40,.1);">
+        <div style="position:relative;width:100%;height:200px;overflow:hidden;"><image-slot id="w2b" shape="rect" src="https://images.pexels.com/photos/9598167/pexels-photo-9598167.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" placeholder="Antes"></image-slot><span style="position:absolute;bottom:10px;left:10px;background:rgba(10,20,32,.82);color:#fff;font-size:11px;font-weight:700;letter-spacing:.06em;padding:5px 10px;border-radius:6px;">{{ t.work.before }}</span></div>
+        <div style="position:relative;width:100%;height:200px;overflow:hidden;"><image-slot id="w2a" shape="rect" src="https://images.pexels.com/photos/10099335/pexels-photo-10099335.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" placeholder="Después"></image-slot><span style="position:absolute;bottom:10px;left:10px;background:#a01e2d;color:#fff;font-size:11px;font-weight:700;letter-spacing:.06em;padding:5px 10px;border-radius:6px;">{{ t.work.after }}</span></div>
+      </div>
+      <div style="border-radius:18px;overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);box-shadow:0 18px 40px rgba(15,25,40,.1);">
+        <div style="position:relative;width:100%;height:200px;overflow:hidden;"><image-slot id="w3b" shape="rect" src="https://images.pexels.com/photos/20537493/pexels-photo-20537493.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" placeholder="Antes"></image-slot><span style="position:absolute;bottom:10px;left:10px;background:rgba(10,20,32,.82);color:#fff;font-size:11px;font-weight:700;letter-spacing:.06em;padding:5px 10px;border-radius:6px;">{{ t.work.before }}</span></div>
+        <div style="position:relative;width:100%;height:200px;overflow:hidden;"><image-slot id="w3a" shape="rect" src="https://images.pexels.com/photos/6301183/pexels-photo-6301183.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" placeholder="Después"></image-slot><span style="position:absolute;bottom:10px;left:10px;background:#a01e2d;color:#fff;font-size:11px;font-weight:700;letter-spacing:.06em;padding:5px 10px;border-radius:6px;">{{ t.work.after }}</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROMO / INSURANCE CLAIMS ============ -->
+<section id="promo" style="background:#0f1a26;padding:72px 28px;">
+  <div style="max-width:1200px;margin:0 auto;text-align:center;">
+    <div style="font-weight:700;font-size:13px;letter-spacing:.16em;color:#ff8a80;">{{ t.promo.kicker }}</div>
+    <h2 data-m="h2big" style="font-size:34px;font-weight:800;margin-top:10px;color:#fff;">{{ t.promo.title }}</h2>
+    <div data-m="promo" style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:36px;">
+      <div style="border-radius:18px;overflow:hidden;box-shadow:0 18px 40px rgba(0,0,0,.4);aspect-ratio:4/5;"><img src="assets/promo-rights.png" alt="Know your rights as a homeowner" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+      <div style="border-radius:18px;overflow:hidden;box-shadow:0 18px 40px rgba(0,0,0,.4);aspect-ratio:4/5;"><img src="assets/promo-mold.png" alt="This is already costing you money" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+      <div style="border-radius:18px;overflow:hidden;box-shadow:0 18px 40px rgba(0,0,0,.4);aspect-ratio:4/5;"><img src="assets/promo-roof.png" alt="Does your roof need replacing" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+    </div>
+    <a href="#contact" style="display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,#a01e2d,#7c1622);color:#fff;font-weight:700;font-size:14px;padding:14px 28px;border-radius:14px;margin-top:36px;box-shadow:0 12px 26px rgba(160,30,45,.32),inset 0 1px 0 rgba(255,255,255,.25);">{{ t.promo.cta }} →</a>
+  </div>
+</section>
+
+<!-- ============ SOCIAL ============ -->
+<section id="social" style="position:relative;background:#fff;padding:72px 28px;overflow:hidden;">
+  <div style="position:absolute;inset:0;background-image:url('assets/unity-logo.png');background-repeat:repeat;background-size:160px auto;opacity:.06;pointer-events:none;z-index:0;"></div>
+  <div style="position:relative;max-width:1200px;margin:0 auto;text-align:center;">
+    <div style="font-weight:700;font-size:13px;letter-spacing:.16em;color:#a01e2d;">{{ t.social.kicker }}</div>
+    <h2 data-m="h2big" style="font-size:34px;font-weight:800;margin-top:10px;color:#1b2430;">{{ t.social.title }}</h2>
+    <p style="color:#5a6472;font-size:15px;max-width:520px;margin:14px auto 0;">{{ t.social.sub }}</p>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:36px;max-width:760px;margin-left:auto;margin-right:auto;">
+      <a href="https://www.instagram.com/reel/DbDt5P4I9p4/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener" style="position:relative;display:block;aspect-ratio:9/16;border-radius:18px;overflow:hidden;box-shadow:0 18px 40px rgba(15,25,40,.14);">
+        <image-slot id="reel1" shape="rect" fit="cover" src="assets/reel1.jpg" placeholder="Instagram Reel 1"></image-slot>
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(0,0,0,.55));pointer-events:none;"></div>
+        <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:56px;height:56px;border-radius:50%;background:rgba(255,255,255,.22);border:1px solid rgba(255,255,255,.6);backdrop-filter:blur(8px);display:grid;place-items:center;color:#fff;font-size:20px;pointer-events:none;">▶</div>
+        <div style="position:absolute;bottom:12px;left:12px;right:12px;color:#fff;font-size:12px;font-weight:700;text-align:left;">@unityrestoration</div>
+      </a>
+      <a href="https://www.instagram.com/reel/DZAxRVORkKE/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener" style="position:relative;display:block;aspect-ratio:9/16;border-radius:18px;overflow:hidden;box-shadow:0 18px 40px rgba(15,25,40,.14);">
+        <image-slot id="reel2" shape="rect" fit="cover" src="assets/reel3.jpg" placeholder="Instagram Reel 2"></image-slot>
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(0,0,0,.55));pointer-events:none;"></div>
+        <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:56px;height:56px;border-radius:50%;background:rgba(255,255,255,.22);border:1px solid rgba(255,255,255,.6);backdrop-filter:blur(8px);display:grid;place-items:center;color:#fff;font-size:20px;pointer-events:none;">▶</div>
+        <div style="position:absolute;bottom:12px;left:12px;right:12px;color:#fff;font-size:12px;font-weight:700;text-align:left;">@unityrestoration</div>
+      </a>
+      <a href="https://www.instagram.com/reel/DYr-fdskZri/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener" style="position:relative;display:block;aspect-ratio:9/16;border-radius:18px;overflow:hidden;box-shadow:0 18px 40px rgba(15,25,40,.14);">
+        <image-slot id="reel3" shape="rect" fit="cover" src="assets/reel2.jpg" placeholder="Instagram Reel 3"></image-slot>
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(0,0,0,.55));pointer-events:none;"></div>
+        <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:56px;height:56px;border-radius:50%;background:rgba(255,255,255,.22);border:1px solid rgba(255,255,255,.6);backdrop-filter:blur(8px);display:grid;place-items:center;color:#fff;font-size:20px;pointer-events:none;">▶</div>
+        <div style="position:absolute;bottom:12px;left:12px;right:12px;color:#fff;font-size:12px;font-weight:700;text-align:left;">@unityrestoration</div>
+      </a>
+    </div>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:36px;">
+      <a href="https://www.instagram.com/unityrestoration/" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:10px;background:linear-gradient(135deg,#a01e2d,#7c1622);color:#fff;font-weight:700;font-size:14px;padding:14px 24px;border-radius:14px;box-shadow:0 12px 26px rgba(160,30,45,.32),inset 0 1px 0 rgba(255,255,255,.25);">📷 {{ t.social.watchInsta }}</a>
+      <a href="https://www.facebook.com/share/1cNbz6AFpE/?mibextid=wwXIfr" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:10px;background:#1877f2;color:#fff;font-weight:700;font-size:14px;padding:14px 24px;border-radius:14px;box-shadow:0 12px 26px rgba(24,119,242,.32),inset 0 1px 0 rgba(255,255,255,.25);">👍 {{ t.social.followFb }}</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIAL ============ -->
+<section style="position:relative;background:#fff;padding:72px 28px;overflow:hidden;">
+  <div style="position:absolute;inset:0;background-image:url('assets/unity-logo.png');background-repeat:repeat;background-size:160px auto;opacity:.06;pointer-events:none;z-index:0;"></div>
+  <div style="position:relative;max-width:900px;margin:0 auto;text-align:center;">
+    <div style="font-weight:700;font-size:13px;letter-spacing:.16em;color:#a01e2d;">{{ t.testi.kicker }}</div>
+    <h2 data-m="h2big" style="font-size:34px;font-weight:800;margin-top:10px;color:#1b2430;">{{ t.testi.title }}</h2>
+    <div data-m="testi-card" style="position:relative;margin-top:32px;background:rgba(255,255,255,.7);backdrop-filter:blur(18px) saturate(160%);border:1px solid rgba(15,25,40,.06);border-radius:22px;padding:44px 60px;box-shadow:0 22px 50px rgba(15,25,40,.08);">
+      <div data-m="testi-arrow" style="position:absolute;left:-22px;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;background:#fff;box-shadow:0 8px 20px rgba(15,25,40,.15);display:grid;place-items:center;color:#a01e2d;font-size:18px;cursor:pointer;">←</div>
+      <div data-m="testi-arrow" style="position:absolute;right:-22px;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;background:#fff;box-shadow:0 8px 20px rgba(15,25,40,.15);display:grid;place-items:center;color:#a01e2d;font-size:18px;cursor:pointer;">→</div>
+      <p style="font-size:19px;line-height:1.6;color:#3a4453;font-style:italic;">"{{ t.testi.quote }}"</p>
+      <div style="color:#e0a52b;font-size:20px;margin-top:20px;letter-spacing:3px;">★★★★★</div>
+      <p style="margin-top:10px;font-weight:700;color:#1b2430;">{{ t.testi.name }}</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EMERGENCY CTA ============ -->
+<section id="contact" style="position:relative;background:linear-gradient(135deg,#a01e2d,#5f101a);color:#fff;padding:52px 28px;overflow:hidden;">
+  <div style="position:absolute;inset:0;background:radial-gradient(circle at 80% 30%,rgba(255,255,255,.12),transparent 45%);pointer-events:none;"></div>
+  <div data-m="cta-row" style="position:relative;max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:26px;">
+    <div style="display:flex;align-items:center;gap:20px;">
+      <div style="width:66px;height:66px;border-radius:50%;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(12px);display:grid;place-items:center;font-size:26px;animation:floaty 3s ease-in-out infinite;">📞</div>
+      <div><h3 style="font-size:24px;font-weight:800;">{{ t.cta.title }}</h3><p style="color:rgba(255,255,255,.85);font-size:15px;margin-top:4px;">{{ t.cta.sub }}</p></div>
+    </div>
+    <a href="https://wa.me/17542711851" target="_blank" rel="noopener" style="background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.4);backdrop-filter:blur(14px);border-radius:14px;padding:14px 30px;text-align:center;color:#fff;"><div style="font-size:11px;letter-spacing:.12em;color:rgba(255,255,255,.75);">{{ t.cta.callNow }}</div><div style="font-family:'Poppins';font-weight:800;font-size:26px;">(754) 271-1851</div></a>
+    <a href="#estimate-form" style="background:#fff;color:#a01e2d;font-weight:800;font-size:14px;letter-spacing:.03em;padding:17px 26px;border-radius:14px;box-shadow:0 14px 30px rgba(0,0,0,.2);">{{ t.cta.getEstimate }} →</a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer style="background:#0a1420;color:rgba(255,255,255,.72);padding:56px 28px 26px;">
+  <div data-m="foot-grid" style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:36px;">
+    <div>
+      <div data-m="foot-logos" style="display:flex;align-items:center;gap:18px;">
+        <img src="assets/unity-logo.png" alt="Unity Restoration Group" style="height:64px;width:auto;filter:brightness(0) invert(1);opacity:.92;" />
+        <span style="width:1px;height:44px;background:rgba(255,255,255,.2);"></span>
+        <a href="https://loan-ix.com" target="_blank" rel="noopener" style="display:inline-flex;">
+          <img src="assets/loanix-logo.png" alt="Loan-IX SoftWorks" style="height:64px;width:auto;filter:brightness(0) invert(1);opacity:.85;" />
+        </a>
+      </div>
+      <p style="margin-top:16px;font-size:14px;line-height:1.6;max-width:290px;">{{ t.footer.tagline }}</p>
+    </div>
+    <div>
+      <h4 style="color:#fff;font-size:15px;font-weight:700;letter-spacing:.04em;">{{ t.footer.quick }}</h4>
+      <div style="display:flex;flex-direction:column;gap:10px;margin-top:16px;font-size:14px;">
+        <a href="#top" style="color:rgba(255,255,255,.72);">{{ t.nav.home }}</a><a href="#services" style="color:rgba(255,255,255,.72);">{{ t.nav.services }}</a><a href="#work" style="color:rgba(255,255,255,.72);">{{ t.nav.work }}</a><a href="#why" style="color:rgba(255,255,255,.72);">{{ t.nav.about }}</a><a href="#contact" style="color:rgba(255,255,255,.72);">{{ t.nav.contact }}</a>
+      </div>
+    </div>
+    <div>
+      <h4 style="color:#fff;font-size:15px;font-weight:700;letter-spacing:.04em;">{{ t.footer.servicesH }}</h4>
+      <div style="display:flex;flex-direction:column;gap:10px;margin-top:16px;font-size:14px;">
+        <a href="#services" style="color:rgba(255,255,255,.72);">{{ t.services.s1 }}</a><a href="#services" style="color:rgba(255,255,255,.72);">{{ t.services.s2 }}</a><a href="#services" style="color:rgba(255,255,255,.72);">{{ t.services.s3 }}</a>
+      </div>
+    </div>
+    <div>
+      <h4 style="color:#fff;font-size:15px;font-weight:700;letter-spacing:.04em;">{{ t.footer.contactH }}</h4>
+      <div style="display:flex;flex-direction:column;gap:12px;margin-top:16px;font-size:14px;">
+        <span>📞 (754) 271-1851</span><span>✉️ andresnacipucha@unityrestorationgroup.com</span><span>📍 Tampa, FL</span><span>🕑 {{ t.footer.avail }}</span>
+      </div>
+    </div>
+  </div>
+  <div data-m="foot-bot" style="max-width:1200px;margin:36px auto 0;padding-top:20px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13px;color:rgba(255,255,255,.5);">
+    <span>{{ t.footer.rights }}</span>
+    <span style="display:flex;gap:16px;align-items:center;">
+      <a href="#" onClick="{{ openPrivacy }}" style="color:rgba(255,255,255,.55);text-decoration:underline;">{{ t.footer.privacy }}</a>
+      <a href="#" onClick="{{ openTerms }}" style="color:rgba(255,255,255,.55);text-decoration:underline;">{{ t.footer.terms }}</a>
+      <span>{{ t.footer.licensed }}</span>
+      <a href="https://loan-ix.com" target="_blank" rel="noopener" style="color:rgba(255,255,255,.4);">Powered by Loan-IX SoftWorks</a>
+    </span>
+  </div>
+</footer>
+
+<sc-if value="{{ legalOpen }}" hint-placeholder-val="{{ false }}">
+  <div onClick="{{ closeLegal }}" style="position:fixed;inset:0;background:rgba(8,14,22,.72);backdrop-filter:blur(4px);z-index:200;display:flex;align-items:center;justify-content:center;padding:24px;">
+    <div onClick="{{ stopClick }}" style="background:#fff;border-radius:18px;max-width:640px;max-height:80vh;overflow-y:auto;padding:36px;box-shadow:0 30px 60px rgba(0,0,0,.4);">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;">
+        <h3 style="font-size:22px;font-weight:800;color:#0f1a26;">{{ legalTitle }}</h3>
+        <button onClick="{{ closeLegal }}" style="background:none;border:none;font-size:22px;color:#5a6472;cursor:pointer;line-height:1;">×</button>
+      </div>
+      <div style="margin-top:16px;font-size:14px;line-height:1.7;color:#3d4552;white-space:pre-line;">{{ legalBody }}</div>
+    </div>
+  </div>
+</sc-if>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;mobileLayout&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;stacked&quot;,&quot;carousel&quot;],&quot;default&quot;:&quot;carousel&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Móvil&quot;}}">
+const DICT = {
+  en: {
+    nav:{home:"Home",services:"Services",work:"Our Work",about:"Why Unity",contact:"Contact",cta:"Get a Free Estimate"},
+    hero:{wx:"Tampa, FL right now",kicker:"WATER · FIRE · MOLD",t1:"Restoring Homes.",t2:"Rebuilding ",t2b:"Lives.",sub:"Unity Restoration Group provides expert restoration services with care, integrity, and fast response across Southwest Florida.",b1:"24/7 Emergency Response",b2:"Licensed & Insured",b3:"Local Team, Trusted Experts",cta:"Get a Free Estimate",call:"(754) 271-1851"},
+    form:{title1:"Get Your ",titleFree:"Free",title2:" Estimate",fast:"Fast. Easy. No obligation.",fName:"Full Name",fPhone:"Phone Number",fEmail:"Email Address",fService:"Service Needed",fMsg:"Tell us about your project...",send:"Send Request",secure:"Your information is secure and confidential."},
+    wx:{sun:"Sunny",cloud:"Cloudy",rain:"Rainy",storm:"Stormy"},
+    alerts:{storm:"Storm Warning",wind:"Wind Advisory",flood:"Flood Watch",rain:"Rain Advisory",clear:"Clear",adv:"Advisory"},
+    tracker:{badge:"LIVE REPORT",title:"Live Storms — All of Florida",sub:"Real-time severe-weather tracking across the state. If your property is affected, we respond 24/7.",updated:"LAST UPDATED",stat1:"ACTIVE ALERTS",stat1s:"counties affected",stat2:"MAX GUST",stat2s:"sustained wind",stat3:"AREA RAIN PROB.",stat3s:"statewide avg",stat4:"TEAMS READY",stat4s:"available now",disclaimer:"Live data via Open-Meteo for Tampa & major Florida cities. Refreshed automatically."},
+    services:{kicker:"OUR SERVICES",title:"Complete Restoration Solutions",sub:"From water damage to fire and mold, we've got you covered. We handle the full process—start to finish.",s1:"Water Damage Restoration",s1d:"Fast water extraction, drying, and damage repair.",s2:"Fire & Smoke Damage",s2d:"Complete cleanup, odor removal, and restoration.",s3:"Mold Remediation",s3d:"Safe mold removal and prevention solutions.",learn:"Learn More"},
+    why:{kicker:"WHY UNITY",t1:"More Than Restoration.",t2:"We Bring ",t2b:"Peace of Mind.",sub:"We know how stressful property damage can be. That's why we make the process simple, transparent, and stress-free.",learn:"Learn More About Us",f1:"Fast Response",f1d:"We're available 24/7 and act fast to minimize damage.",f2:"Expert Team",f2d:"Skilled professionals with years of restoration experience.",f3:"Insurance Support",f3d:"We work directly with your insurance company to make it easy.",f4:"Compassionate Care",f4d:"We treat your home like our own, with respect and care."},
+    process:{kicker:"OUR PROCESS",title:"Restoration Made Simple",p1:"Contact Us",p1d:"Call or fill out the form. We're available 24/7.",p2:"Inspect & Assess",p2d:"We inspect the damage and create a plan.",p3:"Restore & Repair",p3d:"Our team gets to work restoring your property.",p4:"Return with Confidence",p4d:"We make sure your home is safe and complete."},
+    work:{kicker:"OUR WORK",title:"Restoring What Matters Most",viewAll:"View All Projects",before:"BEFORE",after:"AFTER"},
+    promo:{kicker:"INSURANCE CLAIMS",title:"Don't Let Insurance Deny What You're Owed",cta:"Get Your Free Inspection"},
+    social:{kicker:"FOLLOW US",title:"Real Stories From Real Homes",sub:"See our restoration work in action on Instagram, and follow us on Facebook for updates.",watchInsta:"Watch on Instagram",followFb:"Follow on Facebook"},
+    testi:{kicker:"WHAT OUR CLIENTS SAY",title:"Trusted by Homeowners",quote:"Unity Restoration Group was incredible from start to finish. They responded quickly, explained everything clearly, and restored our home better than we expected.",name:"— Sarah M., Tampa, FL"},
+    cta:{title:"Need Help Right Now?",sub:"We're available 24/7 for emergency restoration services.",callNow:"CALL US NOW",getEstimate:"Get a Free Estimate"},
+    footer:{tagline:"Restoring homes. Rebuilding lives. Proudly serving Southwest Florida with integrity and care.",quick:"QUICK LINKS",servicesH:"SERVICES",contactH:"CONTACT US",avail:"Available 24/7",
+    privacy:"Privacy Policy",terms:"Terms & Conditions",
+    privacyTitle:"Privacy Policy",
+    privacyBody:"Unity Restoration Group (\"we\", \"us\") respects your privacy. This policy explains how we collect and use information when you visit this website or submit a request.\n\nInformation we collect: name, phone number, email, property address, and details you provide through our estimate form or by contacting us directly.\n\nHow we use it: to respond to service requests, schedule inspections, provide quotes, and communicate about ongoing or future restoration work. We do not sell your personal information to third parties.\n\nSharing: information may be shared with insurance carriers or adjusters only with your authorization, and with subcontractors as needed to complete approved work.\n\nSecurity: we take reasonable measures to protect your information, though no online transmission is 100% secure.\n\nContact: for questions about this policy or to request removal of your data, email andresnacipucha@unityrestorationgroup.com.\n\nLast updated: July 2026.",
+    termsTitle:"Terms & Conditions",
+    termsBody:"By using this website or requesting services from Unity Restoration Group, you agree to the following terms.\n\nEstimates: quotes provided through this site are preliminary and subject to change after an in-person inspection.\n\nServices: all restoration work is performed under a signed work authorization or contract; this website does not itself constitute a service agreement.\n\nInsurance claims: we may assist in documenting damage for insurance purposes, but coverage decisions and payments are made solely by your insurance carrier. We make no guarantee regarding claim approval or amounts.\n\nEmergency response: response times are estimates and may vary based on weather conditions, location, and demand during widespread storm events.\n\nLimitation of liability: Unity Restoration Group is not liable for delays or damages caused by events outside our reasonable control (severe weather, supply shortages, third-party actions).\n\nGoverning law: these terms are governed by the laws of the State of Florida.\n\nContact: andresnacipucha@unityrestorationgroup.com.\n\nLast updated: July 2026.",avail:"Available 24/7",rights:"© 2024 Unity Restoration Group. All rights reserved.",licensed:"Licensed & Insured"},
+    intro:{taglineA:"After the storm,",taglineB:"calm always comes.",enter:"Enter Site"},
+  },
+  es: {
+    nav:{home:"Inicio",services:"Servicios",work:"Proyectos",about:"Por Qué Unity",contact:"Contacto",cta:"Cotización Gratis"},
+    hero:{wx:"Tampa, FL ahora mismo",kicker:"AGUA · FUEGO · MOHO",t1:"Restauramos Hogares.",t2:"Reconstruimos ",t2b:"Vidas.",sub:"Unity Restoration Group ofrece servicios expertos de restauración con cuidado, integridad y respuesta rápida en todo el suroeste de Florida.",b1:"Emergencias 24/7",b2:"Con Licencia y Asegurados",b3:"Equipo Local de Confianza",cta:"Cotización Gratis",call:"(754) 271-1851"},
+    form:{title1:"Obtén tu ",titleFree:"Cotización",title2:" Gratis",fast:"Rápido. Fácil. Sin compromiso.",fName:"Nombre Completo",fPhone:"Número de Teléfono",fEmail:"Correo Electrónico",fService:"Servicio Requerido",fMsg:"Cuéntanos sobre tu proyecto...",send:"Enviar Solicitud",secure:"Tu información es segura y confidencial."},
+    wx:{sun:"Soleado",cloud:"Nublado",rain:"Lluvioso",storm:"Tormenta"},
+    alerts:{storm:"Aviso de Tormenta",wind:"Aviso de Viento",flood:"Alerta de Inundación",rain:"Aviso de Lluvia",clear:"Despejado",adv:"Aviso"},
+    tracker:{badge:"REPORTE EN VIVO",title:"Tormentas en Vivo — Toda Florida",sub:"Seguimiento de clima severo en tiempo real en todo el estado. Si tu propiedad resulta afectada, respondemos 24/7.",updated:"ÚLTIMA ACTUALIZACIÓN",stat1:"ALERTAS ACTIVAS",stat1s:"condados afectados",stat2:"RÁFAGA MÁX.",stat2s:"viento sostenido",stat3:"PROB. LLUVIA ZONA",stat3s:"promedio estatal",stat4:"EQUIPOS LISTOS",stat4s:"disponibles ahora",disclaimer:"Datos en vivo vía Open-Meteo para Tampa y las principales ciudades de Florida. Actualización automática."},
+    services:{kicker:"NUESTROS SERVICIOS",title:"Soluciones Completas de Restauración",sub:"Desde daños por agua hasta fuego y moho, te cubrimos. Manejamos todo el proceso—de principio a fin.",s1:"Restauración por Agua",s1d:"Extracción de agua, secado y reparación rápidos.",s2:"Daños por Fuego y Humo",s2d:"Limpieza completa, eliminación de olores y restauración.",s3:"Remediación de Moho",s3d:"Eliminación segura de moho y soluciones de prevención.",learn:"Saber Más"},
+    why:{kicker:"POR QUÉ UNITY",t1:"Más que Restauración.",t2:"Traemos ",t2b:"Tranquilidad.",sub:"Sabemos lo estresante que puede ser el daño a tu propiedad. Por eso hacemos el proceso simple, transparente y sin estrés.",learn:"Conoce Más Sobre Nosotros",f1:"Respuesta Rápida",f1d:"Disponibles 24/7 y actuamos rápido para minimizar el daño.",f2:"Equipo Experto",f2d:"Profesionales capacitados con años de experiencia en restauración.",f3:"Apoyo con Seguros",f3d:"Trabajamos directamente con tu aseguradora para facilitarte todo.",f4:"Trato Humano",f4d:"Cuidamos tu hogar como si fuera nuestro, con respeto y cariño."},
+    process:{kicker:"NUESTRO PROCESO",title:"Restauración Sin Complicaciones",p1:"Contáctanos",p1d:"Llama o llena el formulario. Disponibles 24/7.",p2:"Inspección y Evaluación",p2d:"Inspeccionamos el daño y creamos un plan.",p3:"Restaurar y Reparar",p3d:"Nuestro equipo trabaja para restaurar tu propiedad.",p4:"Regresa con Confianza",p4d:"Nos aseguramos de que tu hogar esté seguro y completo."},
+    work:{kicker:"NUESTRO TRABAJO",title:"Restaurando lo que Más Importa",viewAll:"Ver Todos los Proyectos",before:"ANTES",after:"DESPUÉS"},
+    promo:{kicker:"RECLAMOS DE SEGURO",title:"No Dejes Que el Seguro Te Niegue lo que Mereces",cta:"Recibe tu Inspección Gratis"},
+    social:{kicker:"SÍGUENOS",title:"Historias Reales de Hogares Reales",sub:"Mira nuestro trabajo de restauración en acción en Instagram y síguenos en Facebook para más novedades.",watchInsta:"Ver en Instagram",followFb:"Síguenos en Facebook"},
+    testi:{kicker:"LO QUE DICEN NUESTROS CLIENTES",title:"La Confianza de las Familias",quote:"Unity Restoration Group fue increíble de principio a fin. Respondieron rápido, explicaron todo claramente y restauraron nuestro hogar mejor de lo que esperábamos.",name:"— Sarah M., Tampa, FL"},
+    cta:{title:"¿Necesitas Ayuda Ahora?",sub:"Estamos disponibles 24/7 para servicios de restauración de emergencia.",callNow:"LLÁMANOS AHORA",getEstimate:"Cotización Gratis"},
+    footer:{tagline:"Restauramos hogares. Reconstruimos vidas. Con orgullo al servicio del suroeste de Florida con integridad y cuidado.",quick:"ENLACES",servicesH:"SERVICIOS",contactH:"CONTACTO",
+    privacy:"Política de Privacidad",terms:"Términos y Condiciones",
+    privacyTitle:"Política de Privacidad",
+    privacyBody:"Unity Restoration Group (\"nosotros\") respeta tu privacidad. Esta política explica cómo recopilamos y usamos tu información cuando visitas este sitio o envías una solicitud.\n\nInformación que recopilamos: nombre, teléfono, correo electrónico, dirección de la propiedad y detalles que proporciones en nuestro formulario de cotización o al contactarnos.\n\nCómo la usamos: para responder solicitudes de servicio, agendar inspecciones, brindar cotizaciones y comunicarnos sobre trabajos de restauración actuales o futuros. No vendemos tu información personal a terceros.\n\nCompartir información: solo se comparte con aseguradoras o ajustadores con tu autorización, y con subcontratistas según sea necesario para completar el trabajo aprobado.\n\nSeguridad: tomamos medidas razonables para proteger tu información, aunque ninguna transmisión en línea es 100% segura.\n\nContacto: para preguntas sobre esta política o para solicitar la eliminación de tus datos, escribe a andresnacipucha@unityrestorationgroup.com.\n\nÚltima actualización: julio 2026.",
+    termsTitle:"Términos y Condiciones",
+    termsBody:"Al usar este sitio web o solicitar servicios de Unity Restoration Group, aceptas los siguientes términos.\n\nCotizaciones: las cotizaciones brindadas en este sitio son preliminares y pueden cambiar después de una inspección presencial.\n\nServicios: todo trabajo de restauración se realiza bajo una autorización de trabajo o contrato firmado; este sitio web no constituye por sí mismo un acuerdo de servicio.\n\nReclamos de seguro: podemos ayudar a documentar los daños para fines de seguro, pero las decisiones de cobertura y pago las toma únicamente tu aseguradora. No garantizamos la aprobación ni el monto del reclamo.\n\nRespuesta de emergencia: los tiempos de respuesta son estimados y pueden variar según el clima, la ubicación y la demanda durante eventos climáticos generalizados.\n\nLimitación de responsabilidad: Unity Restoration Group no es responsable por retrasos o daños causados por eventos fuera de nuestro control razonable (clima severo, escasez de suministros, acciones de terceros).\n\nLey aplicable: estos términos se rigen por las leyes del Estado de Florida.\n\nContacto: andresnacipucha@unityrestorationgroup.com.\n\nÚltima actualización: julio 2026.",avail:"Disponible 24/7",rights:"© 2024 Unity Restoration Group. Todos los derechos reservados.",licensed:"Con Licencia y Asegurados"},
+    intro:{taglineA:"Después de la tormenta,",taglineB:"siempre viene la calma.",enter:"Entrar al Sitio"},
+  }
+};
+
+const CITYDEFS = [
+  {city:"Tampa",la:27.9506,lo:-82.4572},
+  {city:"Miami",la:25.7617,lo:-80.1918},
+  {city:"Fort Myers",la:26.6406,lo:-81.8723},
+  {city:"Naples",la:26.1420,lo:-81.7948},
+  {city:"Orlando",la:28.5384,lo:-81.3789},
+  {city:"Cape Coral",la:26.5629,lo:-81.9495},
+  {city:"Ft. Lauderdale",la:26.1224,lo:-80.1373},
+  {city:"W. Palm Beach",la:26.7153,lo:-80.0534},
+  {city:"Jacksonville",la:30.3322,lo:-81.6557},
+  {city:"Tallahassee",la:30.4383,lo:-84.2807},
+];
+
+class Component extends DCLogic {
+  nameRef = React.createRef();
+  phoneRef = React.createRef();
+  emailRef = React.createRef();
+  serviceRef = React.createRef();
+  msgRef = React.createRef();
+  state = {
+    lang: "en",
+    introDone: false,
+    legalOpen: null,
+    cursorX: 0,
+    cursorY: 0,
+    cursorOn: false,
+    now: "",
+    cities: CITYDEFS.map((c,i)=>({city:c.city, code:i%3===0?95:(i%2?61:2), temp:82-(i%5), wind:34-(i*2), rain:88-(i*5)})),
+  };
+  _rainHero = null; _rainIntro = null;
+  fmt(d){ try { return d.toLocaleTimeString("en-US",{hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:true,timeZone:"America/New_York"}); } catch(e){ return d.toLocaleTimeString(); } }
+
+  componentDidMount(){
+    this.setState({now:this.fmt(new Date())});
+    this._clock = setInterval(()=>this.setState({now:this.fmt(new Date())}), 1000);
+    this._intro = setTimeout(()=>this.setState({introDone:true}), 5000);
+    this.loadWeather();
+    this._wx = setInterval(()=>this.loadWeather(), 120000);
+  }
+  componentWillUnmount(){ clearInterval(this._clock); clearInterval(this._wx); clearTimeout(this._intro); }
+
+  async loadWeather(){
+    try {
+      const lats = CITYDEFS.map(c=>c.la).join(",");
+      const los = CITYDEFS.map(c=>c.lo).join(",");
+      const url = `https://api.open-meteo.com/v1/forecast?latitude=${lats}&longitude=${los}&current=temperature_2m,weather_code,wind_speed_10m,precipitation&hourly=precipitation_probability&forecast_days=1&temperature_unit=fahrenheit&wind_speed_unit=mph&timezone=America%2FNew_York`;
+      const r = await fetch(url);
+      const j = await r.json();
+      const arr = Array.isArray(j) ? j : [j];
+      const cities = arr.map((d,i)=>{
+        const cur = d.current || {};
+        let rain = 0;
+        if (d.hourly && d.hourly.precipitation_probability && d.hourly.time){
+          let idx = d.hourly.time.findIndex(t=>t.slice(0,13) === (cur.time||"").slice(0,13));
+          if (idx < 0) idx = new Date().getHours();
+          rain = d.hourly.precipitation_probability[idx] ?? 0;
+        }
+        return {
+          city: CITYDEFS[i].city,
+          code: cur.weather_code ?? 2,
+          temp: Math.round(cur.temperature_2m ?? 82),
+          wind: Math.round(cur.wind_speed_10m ?? 10),
+          rain: Math.round(rain),
+        };
+      });
+      if (cities.length) this.setState({cities, now:this.fmt(new Date())});
+    } catch(e){ /* keep fallback data */ }
+  }
+
+  mode(code){
+    if (code>=95) return "storm";
+    if ((code>=51&&code<=67)||(code>=80&&code<=82)) return "rain";
+    if (code===2||code===3||code===45||code===48||(code>=71&&code<=86)) return "cloud";
+    return "sun";
+  }
+  icon(m){ return m==="storm"?"⛈️":m==="rain"?"🌧️":m==="cloud"?"⛅":"☀️"; }
+  color(m){ return m==="storm"?"#ff5d6c":m==="rain"?"#7fd0ff":m==="cloud"?"#b9c2d0":"#ffc861"; }
+  alertKey(m,wind,rain){
+    if (m==="storm") return "storm";
+    if (wind>35) return "wind";
+    if (rain>75) return "flood";
+    if (rain>50) return "rain";
+    if (m==="sun") return "clear";
+    return "adv";
+  }
+  buildRain(n, key){
+    const a=[];
+    for(let i=0;i<n;i++){
+      const left=Math.random()*100, delay=Math.random(), dur=0.45+Math.random()*0.35, len=14+Math.random()*22;
+      a.push(React.createElement("span",{key:key+i,style:{position:"absolute",top:"-60px",left:left+"%",width:"2px",height:len+"px",background:"linear-gradient(180deg,rgba(200,220,240,0),rgba(215,230,248,.85))",borderRadius:"2px",transform:"rotate(8deg)",animation:`urgFall ${dur}s linear ${delay}s infinite`}}));
+    }
+    return a;
+  }
+
+  onHeroMove(e){
+    const r = e.currentTarget.getBoundingClientRect();
+    this.setState({cursorX: e.clientX - r.left, cursorY: e.clientY - r.top, cursorOn: true});
+  }
+  onHeroLeave(){ this.setState({cursorOn:false}); }
+  openLegal(kind, e){ if(e) e.preventDefault(); this.setState({legalOpen:kind}); }
+  closeLegal(){ this.setState({legalOpen:null}); }
+
+  renderVals(){
+    const s = this.state;
+    const t = DICT[s.lang];
+    if (!this._rainHero) this._rainHero = this.buildRain(34,"h");
+    if (!this._rainIntro) this._rainIntro = this.buildRain(48,"i");
+
+    const cities = s.cities.map(c=>{
+      const m = this.mode(c.code);
+      return { city:c.city, temp:c.temp, wind:c.wind, rain:c.rain, ic:this.icon(m), dot:this.color(m), alert:t.alerts[this.alertKey(m,c.wind,c.rain)] };
+    });
+    const tampa = s.cities[0] || {code:2,temp:82,wind:10,rain:20};
+    const tMode = this.mode(tampa.code);
+    const maxWind = Math.max(...s.cities.map(c=>c.wind));
+    const alerts = s.cities.filter(c=>{const m=this.mode(c.code);return m==="storm"||c.rain>80||c.wind>35;}).length;
+    const avgRain = Math.round(s.cities.reduce((a,c)=>a+c.rain,0)/s.cities.length);
+
+    const active = (s.lang==="en");
+    return {
+      t, lang:s.lang,
+      mLClass: this.props.mobileLayout==="carousel" ? "mL-carousel" : "",
+      setEn: ()=>this.setState({lang:"en"}),
+      setEs: ()=>this.setState({lang:"es"}),
+      enBg: active?"#a01e2d":"transparent", enFg: active?"#fff":"#5a6472",
+      esBg: !active?"#a01e2d":"transparent", esFg: !active?"#fff":"#5a6472",
+
+      enter: ()=>this.setState({introDone:true}),
+      nameRef: this.nameRef, phoneRef: this.phoneRef, emailRef: this.emailRef, serviceRef: this.serviceRef, msgRef: this.msgRef,
+      sendMail: ()=>{
+        const g = (r)=> (r.current && r.current.value ? r.current.value.trim() : "");
+        const name=g(this.nameRef), phone=g(this.phoneRef), email=g(this.emailRef), msg=g(this.msgRef);
+        let service = this.serviceRef.current ? this.serviceRef.current.value : "";
+        if (service === t.form.fService) service = "";
+        const body = "Hi Unity Restoration Group,\n\nI'd like a free estimate. Here are my details:\n\nName: "+name+"\nPhone: "+phone+"\nEmail: "+email+"\nService needed: "+service+"\nDetails: "+msg+"\n";
+        window.location.href = "mailto:andresnacipucha@unityrestorationgroup.com?subject=" + encodeURIComponent("New Estimate Request") + "&body=" + encodeURIComponent(body);
+      },
+      pageOpacity: s.introDone?1:0,
+      introOpacity: s.introDone?0:1,
+      introVis: s.introDone?"hidden":"visible",
+      introPE: s.introDone?"none":"auto",
+      introRain: this._rainIntro,
+      heroRain: this._rainHero,
+
+      // hero weather-driven layers
+      skyStorm: tMode==="storm"?1:0,
+      skyRain: tMode==="rain"?1:0,
+      skyCloud: tMode==="cloud"?1:0,
+      skySun: tMode==="sun"?1:0,
+      rainVisible: (tMode==="rain"||tMode==="storm")?1:0,
+      lightningVisible: tMode==="storm"?0.6:0,
+      sunVisible: tMode==="sun"?1:0,
+      cloudVisible: (tMode==="cloud"||tMode==="sun")?1:0.35,
+
+      tampaIcon: this.icon(tMode),
+      tampaTemp: tampa.temp,
+      tampaWind: tampa.wind,
+      tampaCondLabel: t.wx[tMode],
+
+      onHeroMove: (e)=>this.onHeroMove(e),
+      onHeroLeave: ()=>this.onHeroLeave(),
+      cursorLeft: s.cursorX,
+      cursorTop: s.cursorY,
+      cursorGlowOpacity: s.cursorOn ? 1 : 0,
+      cursorSize: tMode==="sun" ? 260 : tMode==="storm" ? 200 : 220,
+      cursorGlowBg: tMode==="sun"
+        ? "radial-gradient(circle,rgba(255,224,150,.9) 0%,rgba(255,196,110,.4) 40%,rgba(255,196,110,0) 72%)"
+        : tMode==="storm"
+        ? "radial-gradient(circle,rgba(200,210,255,.85) 0%,rgba(140,150,220,.35) 40%,rgba(140,150,220,0) 72%)"
+        : tMode==="rain"
+        ? "radial-gradient(circle,rgba(160,210,255,.8) 0%,rgba(110,170,230,.3) 42%,rgba(110,170,230,0) 72%)"
+        : "radial-gradient(circle,rgba(230,235,240,.75) 0%,rgba(200,210,220,.28) 42%,rgba(200,210,220,0) 72%)",
+      cursorDotBg: tMode==="sun" ? "#ffd77a" : tMode==="storm" ? "#c9d2ff" : tMode==="rain" ? "#9fd3ff" : "#e6ebef",
+
+      openPrivacy: (e)=>this.openLegal("privacy", e),
+      openTerms: (e)=>this.openLegal("terms", e),
+      closeLegal: ()=>this.closeLegal(),
+      stopClick: (e)=>e.stopPropagation(),
+      legalOpen: !!s.legalOpen,
+      legalTitle: s.legalOpen==="privacy" ? t.footer.privacyTitle : s.legalOpen==="terms" ? t.footer.termsTitle : "",
+      legalBody: s.legalOpen==="privacy" ? t.footer.privacyBody : s.legalOpen==="terms" ? t.footer.termsBody : "",
+
+      now: s.now||"—",
+      cities, maxWind, alerts, avgRain,
+    };
+  }
+}
+</script>
+</body>
+</html>
