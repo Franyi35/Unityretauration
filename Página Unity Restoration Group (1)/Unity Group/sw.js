@@ -1,4 +1,4 @@
-const CACHE = "unity-restoration-v1";
+const CACHE = "unity-restoration-v2";
 const ASSETS = ["./", "./index.html"];
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(ASSETS)));
